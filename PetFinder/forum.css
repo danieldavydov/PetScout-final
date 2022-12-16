@@ -1,0 +1,56 @@
+#banner {
+    background-image: url("./images/puppyCartoon.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header nav>ul>li a:not(.button) {
+    color: black;
+}
+
+#header nav>ul>li a:not(.button):hover {
+    font-weight: bold;
+}
+
+.statusAlert {
+    width: 100%;
+    background: rgb(131, 186, 110);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+    display: none;
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cd-modal-content > p {
+    text-align: center;
+}
+
+.cd-modal-content > ul, ol > li {
+    color: white;
+}
+
+#postBtn {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#posts > div:nth-child(even) {
+    background-color: white;
+    border: solid 1px;
+}
+
+#posts>div:nth-child(odd) {
+    border: solid 1px;
+}
+
+h5 {
+    font-weight: bold;
+}

@@ -1,0 +1,21 @@
+#banner-photo {
+    width: 100vw;
+    height: 50vh;
+    background: url("/images/cartoonCats.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.content1 {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    margin: auto;
+    width: 30%;
+}
+
+.container1 {
+    margin: auto;
+    width: 80%;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Home | PetScout</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body class="landing is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<!--Turns into a hamburger menu when layout changes-->
+		<header id="header" class="alt" style="background-color: rgba(255, 255, 255, 0.2);">
+			<h1 style="font-weight: bold;"><a href="index.html" style="font-weight: bold; color: black;">PetScout</a>
+			</h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="bark.html">Bark</a></li>
+					<li><a href="adopt.html">Adoption</a></li>
+					<li><a href="petproductshop.html">Pet Stores</a></li>
+					<li><a href="feed.html">Gallery</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner -->
+		<section id="banner">
+			<h2 id="top" class="headline">PetScout</h2>
+			<p class="tagline">Made For Pet Lovers By Pet Lovers</p>
+			<ul class="actions special">
+				<li><a href="#middle" class="button">Our Services</a></li>
+			</ul>
+		</section>
+
+		<!-- Main -->
+		<section id="main" class="container">
+
+			<section class="box special">
+				<header class="major">
+					<h2>The website dedicated to helping animals
+						<br />
+						and bringing happiness one paw at a time!
+					</h2>
+				</header>
+			</section>
+
+			<section class="box special features" id="middle">
+				<div class="features-row">
+					<section>
+						<a href="bark.html" id="hiddenTag" style="color: white;"><span
+								class="icon solid major fa-shield-dog accent2"></span></a>
+						<h3>Bark</h3>
+						<p>Visit Boston University's first unofficial anonymous pet forum! Chat anonymously with peers!
+							<a href="#">Embark on your Barking journey today!</a>
+						</p>
+					</section>
+					<section>
+						<a href="adopt.html" id="hiddenTag" style="color: white;"><span
+								class="icon solid major fa-solid fa-paw accent3"></span></a>
+						<h3>Helping Paws</h3>
+						<p>Here at <a href="#top">PetScout</a> we firmly believe that every pet deserves a home. Our
+							Helping Paw initaitive
+							takes action by <a href="adoption_internal.html">finding the nearest animal shelters to
+								you.</a></p>
+					</section>
+				</div>
+			</section>
+
+			<div class="row">
+				<div class="col-6 col-12-narrower">
+
+					<section class="box special">
+						<span class="image featured"><img src="./images/gallery.png" alt="Framed Pet Pictues" /></span>
+						<h3>Pet Gallery</h3>
+						<p>Looking for some cute pet pics to brighten your day? Look no further! Our photo gallery
+							updates daily, so don't forget to check in daily for new adorable pet pictures!</p>
+						<ul class="actions special">
+							<li><a href="feed.html" class="button alt">Enter Gallery</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<div class="col-6 col-12-narrower">
+
+					<section class="box special">
+						<span class="image featured"><img src="./images/petproduct1.png" alt="Dog Bowl" /></span>
+						<h3>Pet Products</h3>
+						<p>Looking for pet food, toys, or other pet products for your bestfriend? Explore the three
+							nearest
+							pet stores to you! Give it a go, your pet deserves it!</p>
+						<ul class="actions special">
+							<li><a href="petproductshop.html" class="button alt">Find Stores</a></li>
+						</ul>
+					</section>
+
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://github.com/danieldavydov/PetFinder" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>Copyright &copy; 2022 Daniel, Ria, Jeongbin. All rights reserved.</li>
+				<li><a href="credits.html">Credits</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		ScrollReveal().reveal('.headline');
+		ScrollReveal().reveal('.tagline', { delay: 500 })
+	</script>
+</body>
+
+</html>

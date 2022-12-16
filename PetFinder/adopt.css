@@ -1,0 +1,28 @@
+.headline {
+    color: #777;
+}
+
+.forumGroup {
+    cursor: pointer;
+    position: relative;
+    max-width: 20em;
+    margin: 5em auto;
+    width: 100%;
+}
+
+#banner {
+    background-image: url("./images/animals.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+div>p {
+    color: black;
+}
+
+.list-group-item {
+    color: black;
+}
+
+

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>Adopt | PetScout</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="modernizr.js"></script>
+  <link rel="stylesheet" href="adopt.css">
+  <script>
+    $("select").on("click", function () {
+
+      $(this).parent(".forumGroup").toggleClass("open");
+
+    });
+
+    $(document).mouseup(function (e) {
+      var container = $(".forumGroup");
+
+      if (container.has(e.target).length === 0) {
+        container.removeClass("open");
+      }
+    });
+
+
+    $("select").on("change", function () {
+
+      var selection = $(this).find("option:selected").text(),
+        labelFor = $(this).attr("id"),
+        label = $("[for='" + labelFor + "']");
+
+      label.find(".label-desc").html(selection);
+
+    });
+  </script>
+</head>
+
+<body class="landing is-preload">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <!--Turns into a hamburger menu when layout changes-->
+    <header id="header" class="alt" style="background-color: rgba(255, 255, 255, 0.2);">
+      <h1 style="font-weight: bold; font-size: medium;"><a href="index.html"
+          style="font-weight: bold; color: black;">PetScout</a>
+      </h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bark.html">Bark</a></li>
+          <li><a href="adopt.html">Adoption</a></li>
+          <li><a href="petproductshop.html">Pet Stores</a></li>
+          <li><a href="feed.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <ul class="actions special">
+        <li><a href="#forum" class="button">View Pets</a></li>
+      </ul>
+
+      <section id="main" class="container">
+        <br> <br> <br>
+        <section class="box special">
+          <header class="major">
+            <h2 class="headline" style="color: #777;">Adopt a Pet
+              <br />
+            </h2>
+            <p class="tagline">Scout Local Animals In Need Of A Home! <br> Adopt A Pet!</p>
+          </header>
+        </section>
+
+        <section class="cd-section" style="padding:0">
+          <div class="cd-modal-action">
+            <a href="#0" class="btn" data-type="modal-trigger" style="padding:0">Our Recommendations</a>
+            <span class=" cd-modal-bg"></span>
+          </div> <!-- cd-modal-action -->
+
+          <div class="cd-modal">
+            <div class="cd-modal-content">
+              <h3 style="font-weight: bold;">Things to know before adoption</h3>
+              <p>Welcoming a pet into your lives is a beautiful and exciting moment! It is also a time where you learn
+                to
+                provide a
+                warm and comfortable environment to your pet. Here are a few things we thought are important to consider
+                before
+                adopting a pet:
+              <ul class="modeInfo">
+                <li>Ensure that you have enough <strong>space</strong> for a pet in your house - especially after your
+                  pet grows
+                  up!</li>
+                <li>Are you someone who is away from home for most hours of the day? You must think of ways to manage
+                  your pet's
+                  <strong>feeding</strong> and <strong>exercise routine</strong>.
+                </li>
+                <li><strong>Spend time</strong> to get to know your pet before bringing them home - this helps them to
+                  establish
+                  trust in you.</li>
+                <li>If you already live with a pet, <strong>introduce your new furry friend to your pet</strong> and
+                  check if they
+                  can get along.</li>
+                <li>Pet proof your house and <strong>buy essential supplies</strong> like food, a collar and leash, a
+                  bed,
+                  grooming kit and medicines for your pet.</li>
+
+              </ul>
+            </div> <!-- cd-modal-content -->
+          </div> <!-- cd-modal -->
+          <a href="#0" class="cd-modal-close">Close</a>
+        </section>
+
+        <div class="container">
+          <form id="forum">
+            <div class="forumGroup">
+              <h3><label for="animal" style="font-weight: bold;">Select an Animal</label></h3>
+              <select id="animal" class="form-control form-control-lg mb-3">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+              </select>
+              <input type="text" id="zipcode" class="form-control form-control-lg" placeholder="Type zipcodecode">
+              <input type="submit" value="Find" class="btn btn-dark btn-lg btn-block mt-3"
+                style="color: white; background-color: #E89980">
+            </div>
+          </form>
+          <div id="adoptablePets"></div>
+        </div>
+
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://github.com/danieldavydov/PetFinder" class="icon brands fa-github"><span
+                class="label">Github</span></a></li>
+        </ul>
+        <ul class="copyright">
+          <li>Copyright &copy; 2022 Daniel, Ria, Jeongbin. All rights reserved.</li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </footer>
+  </div>
+
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    ScrollReveal().reveal('.headline');
+    ScrollReveal().reveal('.tagline', { delay: 500 })
+  </script>
+  <script src="jquery-2.1.1.js"></script>
+  <script src="velocity.min.js"></script>
+  <script src="main1.js"></script>
+  <script src="adopt.js"></script>
+</body>
+
+</html>

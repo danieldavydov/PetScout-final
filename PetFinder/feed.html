@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="feed.css">
+    <script src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
+    <title>Gallery | PetScout</title>
+    <script>
+        setInterval(function time() {
+            var d = new Date();
+            var hours = 23 - d.getHours();
+            var min = 60 - d.getMinutes();
+            if ((min + '').length == 1) {
+                min = '0' + min;
+            }
+            var sec = 60 - d.getSeconds();
+            if ((sec + '').length == 1) {
+                sec = '0' + sec;
+            }
+            jQuery('#countdown p').html(hours + ':' + min + ':' + sec)
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <header id="header" class="alt" style="background-color: rgba(255, 255, 255, 0.2);">
+        <h1 style="font-weight: bold;"><a href="index.html" style="font-weight: bold; color: black">PetScout</a>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bark.html">Bark</a></li>
+                <li><a href="adopt.html">Adoption</a></li>
+                <li><a href="petproductshop.html">Pet Stores</a></li>
+                <li><a href="feed.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="banner-photo"></div>
+    <div class="content1">
+        <br>
+        <h2 id="simpleUsage"></h2>
+        <p style="padding-bottom: 3px;">Updated Daily! Next update in:</p>
+        <div id="countdown" style="padding-bottom: 3px;">
+            <p style="font-weight: bold;"></p>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="feed">
+            <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
+            <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+            <ul class="juicer-feed" data-feed-id="danieldavydov0-pets" data-origin="embed-code">
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="https://github.com/danieldavydov/PetFinder" class="icon brands fa-github"><span
+                        class="label">Github</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>Copyright &copy; 2022 Daniel, Ria, Jeongbin. All rights reserved.</li>
+            <li><a href="credits.html">Credits</a></li>
+        </ul>
+    </footer>
+
+    <script src="feed.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Bark | PetScout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="modernizr.js"></script>
+    <link rel="stylesheet" href="reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase.js"></script>
+    <link rel="stylesheet" href="forum.css">
+
+</head>
+
+<body class="landing is-preload" onload="fetchData()">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <!--Turns into a hamburger menu when layout changes-->
+        <header id="header" class="alt" style="background-color: rgba(255, 255, 255, 0.2);">
+            <h1 style="font-weight: bold; font-size: medium"><a href="index.html"
+                    style="font-weight: bold; color: black;">PetScout</a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bark.html">Bark</a></li>
+                    <li><a href="adopt.html">Adoption</a></li>
+                    <li><a href="petproductshop.html">Pet Stores</a></li>
+                    <li><a href="feed.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <ul class="actions special">
+                <li><a href="#input-outer-cont" class="button">Go To Finder</a></li>
+            </ul>
+        </section>
+
+        <!-- Main -->
+        <section id="main" class="container">
+
+            <section class="box special">
+                <header class="major">
+                    <h2 class="headline">Bark: Anonymous Forum
+                        <br />
+                    </h2>
+                    <p class="tagline">Read the rules before posting! <br> Have fun and Bark!</p>
+                </header>
+            </section>
+
+            <!-- MODAL HERE -->
+            <section class="cd-section" style="padding:0">
+                <div class="cd-modal-action">
+                    <a href="#0" class="btn" data-type="modal-trigger" style="padding:0">Forum Rules</a>
+                    <span class=" cd-modal-bg"></span>
+                </div> <!-- cd-modal-action -->
+
+                <div class="cd-modal">
+                    <div class="cd-modal-content">
+                        <h3>Forum Rules and Guidelines</h3>
+                        <p>Welcome to Bark: Boston University's first unofficial anonymous pet forum! Here are a few
+                            rules:</p>
+                        <ul>
+                            <li>Be respectful of other users! I.e. Do not make rude remarks, call names, or post hateful
+                                messages. This is a shared space, so please be respectful to others!</li>
+                            <li>Do not give out personal information!</li>
+                            <li>Do not post anything illegal!</li>
+                            <li>Respect the privacy of others. Do not harass other users for personal information!</li>
+                            <li>Always be kind to others!</li>
+                        </ul>
+                        <h3>Guidelines</h3>
+                        <ol>
+                            <li>Type out your post</li>
+                            <li>Hit the "Post" button</li>
+                            <li>If you see a green alert, then you Successfully posted!</li>
+                            <li>Your post is now officially part of the Bark forum! Congrats!</li>
+                        </ol>
+                        <h3>Happy Posting!</h3>
+                    </div> <!-- cd-modal-content -->
+                </div> <!-- cd-modal -->
+                <a href="#0" class="cd-modal-close">Close</a>
+            </section>
+            <br>
+
+            <!--ADD DIV HERE-->
+            <div class="forum-container">
+                <form action="" id="anonForum">
+                    <div class="statusAlert">Successfully Posted!</div>
+                    <div class="header"></div>
+                    <textarea placeholder="Type Your Post... (Unlike Twitter we don't have a word limit)"
+                        id="postContent"></textarea>
+                    <button type="submit" id="postBtn">Post</button>
+                    <div id="posts"></div>
+                </form>
+            </div>
+
+
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="https://github.com/danieldavydov/PetFinder" class="icon brands fa-github"><span
+                            class="label">Github</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>Copyright &copy; 2022 Daniel, Ria, Jeongbin. All rights reserved.</li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        ScrollReveal().reveal('.headline');
+        ScrollReveal().reveal('.tagline', { delay: 500 })
+    </script>
+    <script src="jquery-2.1.1.js"></script>
+    <script src="velocity.min.js"></script>
+    <script src="main1.js"></script>
+
+    <!--Firebase Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="firebaseConfig.js"></script>
+</body>
+
+</html>
